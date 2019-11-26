@@ -1,0 +1,575 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Crypto
+{
+    class SBOX
+    {
+        private static readonly byte[] sbox_table = 
+        {
+            0x63,  0x7c,  0x77,  0x7b,  0xf2,  0x6b,  0x6f,  0xc5,  0x30,  0x01,  0x67,  0x2b,  0xfe,  0xd7,  0xab,  0x76,
+            0xca,  0x82,  0xc9,  0x7d,  0xfa,  0x59,  0x47,  0xf0,  0xad,  0xd4,  0xa2,  0xaf,  0x9c,  0xa4,  0x72,  0xc0,
+            0xb7,  0xfd,  0x93,  0x26,  0x36,  0x3f,  0xf7,  0xcc,  0x34,  0xa5,  0xe5,  0xf1,  0x71,  0xd8,  0x31,  0x15,
+            0x04,  0xc7,  0x23,  0xc3,  0x18,  0x96,  0x05,  0x9a,  0x07,  0x12,  0x80,  0xe2,  0xeb,  0x27,  0xb2,  0x75,
+            0x09,  0x83,  0x2c,  0x1a,  0x1b,  0x6e,  0x5a,  0xa0,  0x52,  0x3b,  0xd6,  0xb3,  0x29,  0xe3,  0x2f,  0x84,
+            0x53,  0xd1,  0x00,  0xed,  0x20,  0xfc,  0xb1,  0x5b,  0x6a,  0xcb,  0xbe,  0x39,  0x4a,  0x4c,  0x58,  0xcf,
+            0xd0,  0xef,  0xaa,  0xfb,  0x43,  0x4d,  0x33,  0x85,  0x45,  0xf9,  0x02,  0x7f,  0x50,  0x3c,  0x9f,  0xa8,
+            0x51,  0xa3,  0x40,  0x8f,  0x92,  0x9d,  0x38,  0xf5,  0xbc,  0xb6,  0xda,  0x21,  0x10,  0xff,  0xf3,  0xd2,
+            0xcd,  0x0c,  0x13,  0xec,  0x5f,  0x97,  0x44,  0x17,  0xc4,  0xa7,  0x7e,  0x3d,  0x64,  0x5d,  0x19,  0x73,
+            0x60,  0x81,  0x4f,  0xdc,  0x22,  0x2a,  0x90,  0x88,  0x46,  0xee,  0xb8,  0x14,  0xde,  0x5e,  0x0b,  0xdb,
+            0xe0,  0x32,  0x3a,  0x0a,  0x49,  0x06,  0x24,  0x5c,  0xc2,  0xd3,  0xac,  0x62,  0x91,  0x95,  0xe4,  0x79,
+            0xe7,  0xc8,  0x37,  0x6d,  0x8d,  0xd5,  0x4e,  0xa9,  0x6c,  0x56,  0xf4,  0xea,  0x65,  0x7a,  0xae,  0x08,
+            0xba,  0x78,  0x25,  0x2e,  0x1c,  0xa6,  0xb4,  0xc6,  0xe8,  0xdd,  0x74,  0x1f,  0x4b,  0xbd,  0x8b,  0x8a,
+            0x70,  0x3e,  0xb5,  0x66,  0x48,  0x03,  0xf6,  0x0e,  0x61,  0x35,  0x57,  0xb9,  0x86,  0xc1,  0x1d,  0x9e,
+            0xe1,  0xf8,  0x98,  0x11,  0x69,  0xd9,  0x8e,  0x94,  0x9b,  0x1e,  0x87,  0xe9,  0xce,  0x55,  0x28,  0xdf,
+            0x8c,  0xa1,  0x89,  0x0d,  0xbf,  0xe6,  0x42,  0x68,  0x41,  0x99,  0x2d,  0x0f,  0xb0,  0x54,  0xbb,  0x16
+        };
+
+        public static byte Convert(byte _byte_)
+        {
+            for (byte x = 0; x < 16; x++)
+            {
+                for (byte y = 0; y < 16; y++)
+                {
+
+                }
+            }
+
+            switch(_byte_)
+            {
+                case 0x0:
+                    return sbox_table[0];
+                case 0x01:
+                    return sbox_table[1];
+                case 0x02:
+                    return sbox_table[2];
+                case 0x03:
+                    return sbox_table[3];
+                case 0x04:
+                    return sbox_table[4];
+                case 0x05:
+                    return sbox_table[5];
+                case 0x06:
+                    return sbox_table[6];
+                case 0x07:
+                    return sbox_table[7];
+                case 0x08:
+                    return sbox_table[8];
+                case 0x09:
+                    return sbox_table[9];
+                case 0x0a:
+                    return sbox_table[10];
+                case 0x0b:
+                    return sbox_table[11];
+                case 0x0c:
+                    return sbox_table[12];
+                case 0x0d:
+                    return sbox_table[13];
+                case 0x0e:
+                    return sbox_table[14];
+                case 0x0f:
+                    return sbox_table[15];
+
+                case 0x10:
+                    return sbox_table[16];
+                case 0x11:
+                    return sbox_table[17];
+                case 0x12:
+                    return sbox_table[18];
+                case 0x13:
+                    return sbox_table[19];
+                case 0x14:
+                    return sbox_table[20];
+                case 0x15:
+                    return sbox_table[21];
+                case 0x16:
+                    return sbox_table[22];
+                case 0x17:
+                    return sbox_table[23];
+                case 0x18:
+                    return sbox_table[24];
+                case 0x19:
+                    return sbox_table[25];
+                case 0x1a:
+                    return sbox_table[26];
+                case 0x1b:
+                    return sbox_table[27];
+                case 0x1c:
+                    return sbox_table[28];
+                case 0x1d:
+                    return sbox_table[29];
+                case 0x1e:
+                    return sbox_table[30];
+                case 0x1f:
+                    return sbox_table[31];
+
+                case 0x20:
+                    return sbox_table[32];
+                case 0x21:
+                    return sbox_table[33];
+                case 0x22:
+                    return sbox_table[34];
+                case 0x23:
+                    return sbox_table[35];
+                case 0x24:
+                    return sbox_table[36];
+                case 0x25:
+                    return sbox_table[37];
+                case 0x26:
+                    return sbox_table[38];
+                case 0x27:
+                    return sbox_table[39];
+                case 0x28:
+                    return sbox_table[40];
+                case 0x29:
+                    return sbox_table[41];
+                case 0x2a:
+                    return sbox_table[42];
+                case 0x2b:
+                    return sbox_table[43];
+                case 0x2c:
+                    return sbox_table[44];
+                case 0x2d:
+                    return sbox_table[45];
+                case 0x2e:
+                    return sbox_table[46];
+                case 0x2f:
+                    return sbox_table[47];
+
+                case 0x30:
+                    return sbox_table[48];
+                case 0x31:
+                    return sbox_table[49];
+                case 0x32:
+                    return sbox_table[50];
+                case 0x33:
+                    return sbox_table[51];
+                case 0x34:
+                    return sbox_table[52];
+                case 0x35:
+                    return sbox_table[53];
+                case 0x36:
+                    return sbox_table[54];
+                case 0x37:
+                    return sbox_table[55];
+                case 0x38:
+                    return sbox_table[56];
+                case 0x39:
+                    return sbox_table[57];
+                case 0x3a:
+                    return sbox_table[58];
+                case 0x3b:
+                    return sbox_table[59];
+                case 0x3c:
+                    return sbox_table[60];
+                case 0x3d:
+                    return sbox_table[61];
+                case 0x3e:
+                    return sbox_table[62];
+                case 0x3f:
+                    return sbox_table[63];
+
+                case 0x40:
+                    return sbox_table[64];
+                case 0x41:
+                    return sbox_table[65];
+                case 0x42:
+                    return sbox_table[66];
+                case 0x43:
+                    return sbox_table[67];
+                case 0x44:
+                    return sbox_table[68];
+                case 0x45:
+                    return sbox_table[69];
+                case 0x46:
+                    return sbox_table[70];
+                case 0x47:
+                    return sbox_table[71];
+                case 0x48:
+                    return sbox_table[72];
+                case 0x49:
+                    return sbox_table[73];
+                case 0x4a:
+                    return sbox_table[74];
+                case 0x4b:
+                    return sbox_table[75];
+                case 0x4c:
+                    return sbox_table[76];
+                case 0x4d:
+                    return sbox_table[77];
+                case 0x4e:
+                    return sbox_table[78];
+                case 0x4f:
+                    return sbox_table[79];
+
+                case 0x50:
+                    return sbox_table[80];
+                case 0x51:
+                    return sbox_table[81];
+                case 0x52:
+                    return sbox_table[82];
+                case 0x53:
+                    return sbox_table[83];
+                case 0x54:
+                    return sbox_table[84];
+                case 0x55:
+                    return sbox_table[85];
+                case 0x56:
+                    return sbox_table[86];
+                case 0x57:
+                    return sbox_table[87];
+                case 0x58:
+                    return sbox_table[88];
+                case 0x59:
+                    return sbox_table[89];
+                case 0x5a:
+                    return sbox_table[90];
+                case 0x5b:
+                    return sbox_table[91];
+                case 0x5c:
+                    return sbox_table[92];
+                case 0x5d:
+                    return sbox_table[93];
+                case 0x5e:
+                    return sbox_table[94];
+                case 0x5f:
+                    return sbox_table[95];
+
+                case 0x60:
+                    return sbox_table[96];
+                case 0x61:
+                    return sbox_table[97];
+                case 0x62:
+                    return sbox_table[98];
+                case 0x63:
+                    return sbox_table[99];
+                case 0x64:
+                    return sbox_table[100];
+                case 0x65:
+                    return sbox_table[101];
+                case 0x66:
+                    return sbox_table[102];
+                case 0x67:
+                    return sbox_table[103];
+                case 0x68:
+                    return sbox_table[104];
+                case 0x69:
+                    return sbox_table[105];
+                case 0x6a:
+                    return sbox_table[106];
+                case 0x6b:
+                    return sbox_table[107];
+                case 0x6c:
+                    return sbox_table[108];
+                case 0x6d:
+                    return sbox_table[109];
+                case 0x6e:
+                    return sbox_table[110];
+                case 0x6f:
+                    return sbox_table[111];
+
+                case 0x70:
+                    return sbox_table[112];
+                case 0x71:
+                    return sbox_table[113];
+                case 0x72:
+                    return sbox_table[114];
+                case 0x73:
+                    return sbox_table[115];
+                case 0x74:
+                    return sbox_table[116];
+                case 0x75:
+                    return sbox_table[117];
+                case 0x76:
+                    return sbox_table[118];
+                case 0x77:
+                    return sbox_table[119];
+                case 0x78:
+                    return sbox_table[120];
+                case 0x79:
+                    return sbox_table[121];
+                case 0x7a:
+                    return sbox_table[122];
+                case 0x7b:
+                    return sbox_table[123];
+                case 0x7c:
+                    return sbox_table[124];
+                case 0x7d:
+                    return sbox_table[125];
+                case 0x7e:
+                    return sbox_table[126];
+                case 0x7f:
+                    return sbox_table[127];
+
+                case 0x80:
+                    return sbox_table[128];
+                case 0x81:
+                    return sbox_table[129];
+                case 0x82:
+                    return sbox_table[130];
+                case 0x83:
+                    return sbox_table[131];
+                case 0x84:
+                    return sbox_table[132];
+                case 0x85:
+                    return sbox_table[133];
+                case 0x86:
+                    return sbox_table[134];
+                case 0x87:
+                    return sbox_table[135];
+                case 0x88:
+                    return sbox_table[136];
+                case 0x89:
+                    return sbox_table[137];
+                case 0x8a:
+                    return sbox_table[138];
+                case 0x8b:
+                    return sbox_table[139];
+                case 0x8c:
+                    return sbox_table[140];
+                case 0x8d:
+                    return sbox_table[141];
+                case 0x8e:
+                    return sbox_table[142];
+                case 0x8f:
+                    return sbox_table[143];
+
+                case 0x90:
+                    return sbox_table[144];
+                case 0x91:
+                    return sbox_table[145];
+                case 0x92:
+                    return sbox_table[146];
+                case 0x93:
+                    return sbox_table[147];
+                case 0x94:
+                    return sbox_table[148];
+                case 0x95:
+                    return sbox_table[149];
+                case 0x96:
+                    return sbox_table[150];
+                case 0x97:
+                    return sbox_table[151];
+                case 0x98:
+                    return sbox_table[152];
+                case 0x99:
+                    return sbox_table[153];
+                case 0x9a:
+                    return sbox_table[154];
+                case 0x9b:
+                    return sbox_table[155];
+                case 0x9c:
+                    return sbox_table[156];
+                case 0x9d:
+                    return sbox_table[157];
+                case 0x9e:
+                    return sbox_table[158];
+                case 0x9f:
+                    return sbox_table[159];
+
+                case 0xa0:
+                    return sbox_table[160];
+                case 0xa1:
+                    return sbox_table[161];
+                case 0xa2:
+                    return sbox_table[162];
+                case 0xa3:
+                    return sbox_table[163];
+                case 0xa4:
+                    return sbox_table[164];
+                case 0xa5:
+                    return sbox_table[165];
+                case 0xa6:
+                    return sbox_table[166];
+                case 0xa7:
+                    return sbox_table[167];
+                case 0xa8:
+                    return sbox_table[168];
+                case 0xa9:
+                    return sbox_table[169];
+                case 0xaa:
+                    return sbox_table[170];
+                case 0xab:
+                    return sbox_table[171];
+                case 0xac:
+                    return sbox_table[172];
+                case 0xad:
+                    return sbox_table[173];
+                case 0xae:
+                    return sbox_table[174];
+                case 0xaf:
+                    return sbox_table[175];
+
+                case 0xb0:
+                    return sbox_table[176];
+                case 0xb1:
+                    return sbox_table[177];
+                case 0xb2:
+                    return sbox_table[178];
+                case 0xb3:
+                    return sbox_table[179];
+                case 0xb4:
+                    return sbox_table[180];
+                case 0xb5:
+                    return sbox_table[181];
+                case 0xb6:
+                    return sbox_table[182];
+                case 0xb7:
+                    return sbox_table[183];
+                case 0xb8:
+                    return sbox_table[184];
+                case 0xb9:
+                    return sbox_table[185];
+                case 0xba:
+                    return sbox_table[186];
+                case 0xbb:
+                    return sbox_table[187];
+                case 0xbc:
+                    return sbox_table[188];
+                case 0xbd:
+                    return sbox_table[189];
+                case 0xbe:
+                    return sbox_table[190];
+                case 0xbf:
+                    return sbox_table[191];
+
+                case 0xc0:
+                    return sbox_table[192];
+                case 0xc1:
+                    return sbox_table[193];
+                case 0xc2:
+                    return sbox_table[194];
+                case 0xc3:
+                    return sbox_table[195];
+                case 0xc4:
+                    return sbox_table[196];
+                case 0xc5:
+                    return sbox_table[197];
+                case 0xc6:
+                    return sbox_table[198];
+                case 0xc7:
+                    return sbox_table[199];
+                case 0xc8:
+                    return sbox_table[200];
+                case 0xc9:
+                    return sbox_table[201];
+                case 0xca:
+                    return sbox_table[202];
+                case 0xcb:
+                    return sbox_table[203];
+                case 0xcc:
+                    return sbox_table[204];
+                case 0xcd:
+                    return sbox_table[205];
+                case 0xce:
+                    return sbox_table[206];
+                case 0xcf:
+                    return sbox_table[207];
+
+                case 0xd0:
+                    return sbox_table[208];
+                case 0xd1:
+                    return sbox_table[209];
+                case 0xd2:
+                    return sbox_table[210];
+                case 0xd3:
+                    return sbox_table[211];
+                case 0xd4:
+                    return sbox_table[212];
+                case 0xd5:
+                    return sbox_table[213];
+                case 0xd6:
+                    return sbox_table[214];
+                case 0xd7:
+                    return sbox_table[215];
+                case 0xd8:
+                    return sbox_table[216];
+                case 0xd9:
+                    return sbox_table[217];
+                case 0xda:
+                    return sbox_table[218];
+                case 0xdb:
+                    return sbox_table[219];
+                case 0xdc:
+                    return sbox_table[220];
+                case 0xdd:
+                    return sbox_table[221];
+                case 0xde:
+                    return sbox_table[222];
+                case 0xdf:
+                    return sbox_table[223];
+
+                case 0xe0:
+                    return sbox_table[224];
+                case 0xe1:
+                    return sbox_table[225];
+                case 0xe2:
+                    return sbox_table[226];
+                case 0xe3:
+                    return sbox_table[227];
+                case 0xe4:
+                    return sbox_table[228];
+                case 0xe5:
+                    return sbox_table[229];
+                case 0xe6:
+                    return sbox_table[230];
+                case 0xe7:
+                    return sbox_table[231];
+                case 0xe8:
+                    return sbox_table[232];
+                case 0xe9:
+                    return sbox_table[233];
+                case 0xea:
+                    return sbox_table[234];
+                case 0xeb:
+                    return sbox_table[235];
+                case 0xec:
+                    return sbox_table[236];
+                case 0xed:
+                    return sbox_table[237];
+                case 0xee:
+                    return sbox_table[238];
+                case 0xef:
+                    return sbox_table[239];
+
+                case 0xf0:
+                    return sbox_table[240];
+                case 0xf1:
+                    return sbox_table[241];
+                case 0xf2:
+                    return sbox_table[242];
+                case 0xf3:
+                    return sbox_table[243];
+                case 0xf4:
+                    return sbox_table[244];
+                case 0xf5:
+                    return sbox_table[245];
+                case 0xf6:
+                    return sbox_table[246];
+                case 0xf7:
+                    return sbox_table[247];
+                case 0xf8:
+                    return sbox_table[248];
+                case 0xf9:
+                    return sbox_table[249];
+                case 0xfa:
+                    return sbox_table[250];
+                case 0xfb:
+                    return sbox_table[251];
+                case 0xfc:
+                    return sbox_table[252];
+                case 0xfd:
+                    return sbox_table[253];
+                case 0xfe:
+                    return sbox_table[254];
+                case 0xff:
+                    return sbox_table[255];
+            }
+
+            return 0x0;
+        }
+    }
+}
